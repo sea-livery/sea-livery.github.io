@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
       --navy:#0B2143;--blue:#1D3557;--gold:#D4AF37;--gold-dark:#A98531;
@@ -35,8 +35,9 @@
     .premium{margin-top:7px;color:var(--gold-dark);font-weight:600;font-size:9px;letter-spacing:.34em;text-transform:uppercase}
     .brand-rule{height:1px;width:91px;background:linear-gradient(90deg,transparent,var(--gold-dark),transparent);margin:18px auto 0}
     .intro{text-align:center;padding:0 3px;margin-bottom:16px}
-    h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(42px,10vw,51px);line-height:.95;letter-spacing:-.018em;font-weight:500;margin:19px auto 12px}
-    h1 em{font-style:normal;color:var(--blue)}
+    h1{font-family:Manrope,Montserrat,Arial,sans-serif;font-size:clamp(32px,9vw,45px);line-height:1.18;letter-spacing:-.055em;font-weight:800;margin:23px auto 19px}
+    h1 em{font-style:normal;color:var(--blue);position:relative;white-space:nowrap}
+    h1 em::after{content:"";position:absolute;left:7%;bottom:-5px;width:86%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border-radius:2px}
     .tagline{font-size:12px;line-height:1.7;color:var(--muted);margin:0 auto;max-width:340px}
     .visual{position:relative;overflow:hidden;border-radius:15px;height:232px;background:#d6e4eb;box-shadow:0 12px 28px rgba(11,33,67,.08)}
     .visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 50%}
@@ -82,7 +83,7 @@
     .foot-loc{color:#5F6D7C;font-size:10px;letter-spacing:.18em;margin-top:0;text-transform:uppercase}
     .foot-note{color:#9BA6AE;letter-spacing:.08em;font-size:9px;margin-top:13px}
     @media(min-width:520px){.page{margin:24px auto;border-radius:23px;border:1px solid #E6E2DA;box-shadow:0 20px 60px rgba(11,33,67,.08);padding:28px 29px 33px}}
-    @media(max-width:370px){.page{padding-left:16px;padding-right:16px}.visual{height:208px}.wordmark{font-size:36px}h1{font-size:40px}.action strong,.social-text strong{font-size:12px}.action small,.social-text small{font-size:9.3px}}
+    @media(max-width:370px){.page{padding-left:16px;padding-right:16px}.visual{height:208px}.wordmark{font-size:36px}h1{font-size:32px}.action strong,.social-text strong{font-size:12px}.action small,.social-text small{font-size:9.3px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
   </style>
 </head>
@@ -96,7 +97,7 @@
   </header>
 
   <section class="intro" aria-labelledby="hero-heading">
-    <h1 id="hero-heading">Свежесть моря.<br><em>Эстетика продукта.</em></h1>
+    <h1 id="hero-heading">Свежесть <em>моря.</em></h1>
     <p class="tagline">Норвежская сёмга, икра и морепродукты<br>с доставкой по Батуми и ближайшим районам.</p>
   </section>
 
@@ -122,7 +123,7 @@
 
     <a class="action action--whatsapp" href="https://wa.me/995568997063?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%BF%D0%BE%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%83%20B2B%2C%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%20%D0%B2%20SEA%20LIVERY." target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp по вопросам B2B, сотрудничества и консультации">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      <span class="text"><strong>WhatsApp для B2B</strong><small>Сотрудничество, опт, блогеры и бизнес-консультации</small></span>
+      <span class="text"><strong>WhatsApp для B2B</strong><small>Сотрудничество | Блогеры | B2B</small></span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M9 7h8v8"/></svg>
     </a>
 
